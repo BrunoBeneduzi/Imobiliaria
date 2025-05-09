@@ -1,5 +1,5 @@
 # Imobiliaria
-Projeto que faz a exibição de imoveis, sendo eles, terreno, apartamento e casa
+Projeto que faz a exibição de imoveis, sendo eles, terreno, apartamento e casa, porem a exibição precisa seguir um padrão, utilizo de Herança nesse projeto
 
 Objetivo:
 
