@@ -23,8 +23,8 @@ public class ImobiliariaMenu {
 			}catch(InputMismatchException e) {
 				sc.nextLine();
 			}
-			
-			
+		
+		
 			this.linha();
 			
 				switch(escolha) {

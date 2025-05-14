@@ -14,14 +14,17 @@ public class Cadastro {
 	private ImobiliariaRepository listaImoveis = new ImobiliariaRepository();
 	private VerificaAreaEvalor verificador = new VerificaAreaEvalor();
 	int escolha = 0;
+	
+	
 	public void cadastro() {
-		System.out.println("Digite o tipo de imovel que deseja cadastrar"+"\n1- Casa"+"\n2- Apartamento"+"\n3- Terreno");
+		System.out.print("Digite o tipo de imovel que deseja cadastrar"+"\n1- Casa"+"\n2- Apartamento"+"\n3- Terreno"+"\n-> ");
 		
 		try {
 			escolha = sc.nextInt();
 			sc.nextLine();
 		}catch(InputMismatchException e) {
 			sc.nextLine();
+			System.out.println("Retornando para o Menu");
 		}
 		
 		this.linha();
