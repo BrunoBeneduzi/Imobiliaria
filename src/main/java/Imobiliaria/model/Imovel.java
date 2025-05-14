@@ -11,7 +11,6 @@ public class Imovel {
 		this.valorDoImovel = valorDoImovel;
 	}
 	
-
 	public BigDecimal getAreaDoImovel() {
 		return areaDoImovel;
 	}
