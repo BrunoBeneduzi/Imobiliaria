@@ -1,5 +1,6 @@
 package Imobiliaria.menu;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import Imobiliaria.service.Cadastro;
@@ -15,8 +16,14 @@ public class ImobiliariaMenu {
 		do {
 			System.out.print("Digite o que deseja fazer"+"\n0- Para carregar imoveis prontos"+"\n1- Cadastrar imovel"+"\n2- Listar todos os imoveis"+"\n3- Exibir apenas as casas"+"\n4- Exibir apenas os apartamentos"
 		+"\n5- Exibir apenas os terrenos"+"\n6- Encerrar programa"+"\n-> ");
-			escolha = sc.nextInt();
-			sc.nextLine();
+			
+			try {
+				escolha = sc.nextInt();
+				sc.nextLine();
+			}catch(InputMismatchException e) {
+				sc.nextLine();
+			}
+			
 			
 			this.linha();
 			
@@ -44,6 +51,7 @@ public class ImobiliariaMenu {
 				default:
 					System.out.println("Numero invalido");
 				}
+		this.linha();
 		}while(escolha != 6);
 		System.out.println("Programa encerrado");
 	}

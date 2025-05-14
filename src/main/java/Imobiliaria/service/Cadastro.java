@@ -13,11 +13,19 @@ public class Cadastro {
 	private Scanner sc = new Scanner(System.in);
 	private ImobiliariaRepository listaImoveis = new ImobiliariaRepository();
 	private VerificaAreaEvalor verificador = new VerificaAreaEvalor();
-	
+	int escolha = 0;
 	public void cadastro() {
 		System.out.println("Digite o tipo de imovel que deseja cadastrar"+"\n1- Casa"+"\n2- Apartamento"+"\n3- Terreno");
+		
+		try {
+			escolha = sc.nextInt();
+			sc.nextLine();
+		}catch(InputMismatchException e) {
+			sc.nextLine();
+		}
+		
 		this.linha();
-		switch(2) {
+		switch(escolha) {
 		case 1:
 			this.cadastrarCasa();
 			System.out.println("--------------------------------- Cadastro concluido ---------------------------------");

@@ -16,20 +16,24 @@ public class Listar {
 	private ImobiliariaRepository listaImoveis = new ImobiliariaRepository();
 	
 	public void exibirTodosOsImoveisMenu() {
-		for(Imovel imoveis : listaImoveis.getListaDeImoveis()) {
-			
-			if(imoveis instanceof Casa) {
-				Casa casa = (Casa) imoveis;
-				this.exibeApenasCasas(casa);
+		if(!this.listaImoveis.getListaDeImoveis().isEmpty()) {
+			for(Imovel imoveis : listaImoveis.getListaDeImoveis()) {
 				
-			}else if(imoveis instanceof Apartamento) {
-				Apartamento apartamento = (Apartamento) imoveis;
-				this.exibeApenasApartamento(apartamento);
-				
-			}else if(imoveis instanceof Terreno) {
-				Terreno terreno = (Terreno) imoveis;
-				this.exibeApenasTerreno(terreno);
+				if(imoveis instanceof Casa) {
+					Casa casa = (Casa) imoveis;
+					this.exibeApenasCasas(casa);
+					
+				}else if(imoveis instanceof Apartamento) {
+					Apartamento apartamento = (Apartamento) imoveis;
+					this.exibeApenasApartamento(apartamento);
+					
+				}else if(imoveis instanceof Terreno) {
+					Terreno terreno = (Terreno) imoveis;
+					this.exibeApenasTerreno(terreno);
+				}
 			}
+		}else {
+			System.out.println("+++++++ LISTA VAZIA +++++++");
 		}
 	}
 	
