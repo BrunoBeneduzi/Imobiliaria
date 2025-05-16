@@ -39,6 +39,23 @@ O objetivo deste projeto é implementar um sistema de gestão de imóveis com as
 - **Exibição de Detalhes**:
   - Os detalhes incluem valores, área e atributos específicos como número de cômodos ou área de terreno.
 
+
+# 📥 Como Clonar um Repositório Git
+
+## 🔓 Clonar um Repositório Público
+
+Repositórios públicos estão disponíveis para qualquer pessoa acessar. Para clonar um repositório público, siga os passos:
+
+1. 💾 Tenha o **Git** instalado em sua máquina. [👉 Baixe aqui](https://git-scm.com/downloads)
+2. 📋 Copie a **URL do repositório** (exemplo: `https://github.com/usuario/repositorio.git`)
+3. 🖥️ Abra o **terminal** (Prompt de Comando, PowerShell ou Terminal no Linux/Mac)
+4. 📁 Navegue até a pasta onde deseja salvar o projeto:  
+   ```bash
+   cd caminho/para/pasta
+   ```
+   🧩 Rode o comando para clonar: git clone https://github.com/BrunoBeneduzi/LivrariaProjeto.git
+
+
 ## ⚙️ Tecnologias Utilizadas
 
 - **Java** ☕
