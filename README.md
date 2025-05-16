@@ -4,7 +4,7 @@ Este projeto simula a gestão de imóveis à venda, exibindo informações confo
 
 ## 🎯 Objetivo do Projeto
 
-O objetivo deste projeto é implementar um sistema de gestão de imóveis com as seguintes funcionalidades:
+O objetivo deste projeto é implementar um sistema de gestão de imóveis com as seguintes funcionalidades: Cadastro e listagem de imoveis
 
 ### Tipos de Imóveis:
 1. **Casa** 🏠:
