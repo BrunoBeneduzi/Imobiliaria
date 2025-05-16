@@ -61,12 +61,6 @@ Repositórios públicos estão disponíveis para qualquer pessoa acessar. Para c
 
    1.1. [Como baixar o Eclipse?](https://www.youtube.com/watch?v=KWGIaWh71q4)
 
-2. 🗄️ Este projeto utiliza o banco de dados **PostgreSQL**, mas você pode usar outro banco de sua preferência. Caso queira usar o **PostgreSQL**, siga as instruções abaixo:
-
-   2.1. [Link para baixar o PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-
-   2.2. [Tutorial de como baixar o PostgreSQL](https://www.youtube.com/watch?v=UbX-2Xud1JA)
-
 ## ⚙️ Tecnologias Utilizadas
 
 - **Java** ☕
